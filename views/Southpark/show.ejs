@@ -1,0 +1,81 @@
+<% include ../partials/header %>
+<div class="container"> 
+	<div class="row">
+		<div class="col-md-3">
+			<p class="lead">South Park</p>
+			<div class="list-group">
+				<li class="list-group-item active">1</li>
+				<li class="list-group-item">2</li>
+				<li class="list-group-item">3</li>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="thumbnail">
+				<img class="img-responsive" src="<%= southparks.image %>">
+				   <div class="caption">
+						<h4 class="pull-right">REAL MAIN CHARACTER</h4>
+						<h4><a><%= southparks.name %></a></h4>
+						<p><%= southparks.description%></p>
+						<p>Submitted by <%=southparks.author.username%></p>
+						<span class="pull-right">ate 
+							<%=southparks.amount %> burger<%if(southparks.amount>1){%>s<%}%>
+									
+								</span>
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<% if(currentUser && southparks.author.id.equals(currentUser._id)){%>
+						<a href="/southpark/<%=southparks._id%>/edit" class="btn btn-warning" role="button"> &nbspEDIT&nbsp</a>
+						<form id="delete-form" action="/southpark/<%=southparks._id%>?_method=DELETE" method="POST"><button class="btn btn-danger">Delete</button></form>
+						<% } else { %>
+							<div id="invisible-div">
+						<li></li>
+							</div>
+						<%}%>
+				   </div>
+			</div>
+			<div class="well">
+				<div class="text-right">
+					<p><a href="/southpark/<%=southparks._id%>/comments/new" class="btn btn-lg btn-primary" >Add Comment</a></p>
+				</div>
+				<hr>
+						<%southparks.comments.forEach(function(comment){  %>
+							<div class="row">
+								<div class="col-md-12">
+									<strong><p>★★★★☆<%=comment.author.username%></p></strong>
+
+									<span class="pull-right">5 days ago</span>
+
+									<p class="pull-left">
+									 	<%= comment.text%>
+									</p>
+									
+								</div>
+									<% if(currentUser && comment.author.id.equals(currentUser._id)){%>
+									<div>
+										<a class="btn btn-xs btn-warning" 
+										href="/southpark/<%=southparks._id%>/comments/<%=comment._id%>/edit">
+										&nbspEdit&nbsp</a>
+										<form id="delete-form" 
+										action="/southpark/<%=southparks._id%>/comments/<%= comment._id%>?_method=DELETE" method="POST">
+											<button  class="btn btn-xs btn-danger">Delete</button>
+										</form> 
+									</div>
+									<% } %>
+							</div>
+
+							
+						<%	});%>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<% include ../partials/footer %>
