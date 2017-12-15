@@ -15,7 +15,7 @@ methodOverride   = require('method-override'),
 var southparkRoute	 = require("./routes/southpark"),
     indexRoute		 = require("./routes/index"),
 	commentRoute	 = require("./routes/comments");
-var process.env.DATABASEURL;
+
 var uri 	= "mongodb://wacKY:ak36w893@ds141766.mlab.com:41766/southpark";
 var localurl='mongodb://localhost/South_Park12';
 mongoose.connect(uri);
