@@ -18,7 +18,7 @@ var southparkRoute	 = require("./routes/southpark"),
 
 
 console.log(process.env.DATABASEURL);
-var uri 	= "mongodb://wacKY:ak36w893@ds141766.mlab.com:41766/southpark";
+var uri 	= "mongodb://wacKY:wacKY@ds141766.mlab.com:41766/southpark";
 var localurl='mongodb://localhost/South_Park12';
 mongoose.connect(process.env.DATABASEURL);
 
