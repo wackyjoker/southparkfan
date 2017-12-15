@@ -20,7 +20,9 @@ var southparkRoute	 = require("./routes/southpark"),
 console.log(process.env.DATABASEURL);
 var uri 	= "mongodb://wacKY:wacKY@ds141766.mlab.com:41766/southpark";
 var localurl='mongodb://localhost/South_Park12';
-mongoose.connect(process.env.DATABASEURL);
+var combinedUrl= process.env.DATABASEURL || localurl ; 
+
+mongoose.connect(combinedUrl);
 
 // mongoose.connect(uri);
 app.set('view engine','ejs');
