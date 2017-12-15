@@ -17,8 +17,8 @@ var southparkRoute	 = require("./routes/southpark"),
 	commentRoute	 = require("./routes/comments");
 
 
-console.log(process.env.DATABASEURL);
-var uri 	= "mongodb://wacKY:wacKY@ds141766.mlab.com:41766/southpark";
+
+
 var localurl='mongodb://localhost/South_Park12';
 var combinedUrl= process.env.DATABASEURL || localurl ; 
 
