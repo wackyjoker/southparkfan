@@ -16,9 +16,10 @@ var southparkRoute	 = require("./routes/southpark"),
     indexRoute		 = require("./routes/index"),
 	commentRoute	 = require("./routes/comments");
 
+var uri = "mongodb://wacKY:ak36w893@ds141766.mlab.com:41766/southpark";
 
-mongoose.connect('mongodb://localhost/South_Park12');
-
+// mongoose.connect('mongodb://localhost/South_Park12');
+mongoose.connect(uri);
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
