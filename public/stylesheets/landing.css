@@ -2,15 +2,32 @@ body {
 	background: #000;
 }
 
+
+
+
+
 #landing-header {
   z-index: 1;
   position: relative;
   text-align: center;
   padding-top: 40vh;
+  
+
+}
+
+#landing-header header{
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #landing-header h1 {
-	color: #000;
+  font-family: southpark;
+  font-weight:bold;
+  color: #000000;
+}
+
+@font-face{
+  font-family:southpark;
+  src:url(southpark.ttf);
 }
 
 .slideshow { 
