@@ -1,5 +1,8 @@
 body {
 	background: #000;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 
@@ -11,24 +14,74 @@ body {
   position: relative;
   text-align: center;
   padding-top: 40vh;
-  
+  padding-top: 15%;
+  flex-wrap: row;
+  justify-content: center;
 
 }
 
 #landing-header header{
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  height:25%;
+  width:40%;
+  margin: auto;
+  
 }
 
 #landing-header h1 {
+  padding-top: 3%;
   font-family: southpark;
   font-weight:bold;
-  color: #000000;
+  color: #bfbfbf;
+  line-height: 5vw;
+  font-size: 2.5vw;
+  height: 100%;
 }
+
+#btn{
+  font-family:southpark;
+  font-size:1vw;
+  box-shadow: 0 6px #cccccc ;
+  text-decoration: none;
+  background-color: #d9d9d9;
+  color: #333333;
+  display:block;
+  justify-content: center;
+  border-radius : 8px;
+  height:25px;
+  width: 300px;
+  outline: none;
+  appearance: button;
+  text-decoration-line: none;
+  cursor: pointer;
+  display:block;
+  position: relative;
+  padding-top:12px;
+  margin:auto;
+    
+}
+#btn:hover{
+  background-color: #a6a6a6;
+  box-shadow: 0 4px #a6a6a6 ;
+  top:2px;
+}
+
+#btn:active{
+ background-color: #808080;
+  box-shadow: 0 0px #cccccc ;
+  top:6px;
+}
+
+
+
+
 
 @font-face{
   font-family:southpark;
   src:url(southpark.ttf);
 }
+
+
 
 .slideshow { 
   position: fixed;
@@ -57,10 +110,11 @@ body {
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(https://images5.alphacoders.com/668/thumb-1920-668183.jpg) 
+  background-image: url(https://images5.alphacoders.com/668/thumb-1920-668183.jpg);
+  animation-delay:0s;
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(http://www.4usky.com/data/out/86/164775102-south-park-wallpapers.jpg);
+  background-image: url(http://www.4usky.com/data/out/86/164774945-south-park-wallpapers.jpg);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 

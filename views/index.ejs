@@ -3,37 +3,36 @@
 <html>
     <head>
         <title>South Park</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        
         <!-- <link rel="stylesheet" href="/stylesheets/landing.css"> -->
         <link rel="stylesheet" href="/stylesheets/landing.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+        
     </head>
     <body>
-    
-    <div class = 'container'>
+    <header>
+        <h2>wacKY's South Park</h2>
+        <nav>
+            <li><a href="">Tours</a></li>        
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>    
+        </nav>
+    </header>
+
+
+
+    <div id = 'container'>
 	
 	
 	
-	<div class="container">
-        <% if(error && error.length > 0){ %>
-            <div class="alert alert-danger" role="alert">
-                <%= error %>
-            </div>
-        <% } %>
-        <% if(success && success.length > 0){ %>
-            <div class="alert alert-success" role="alert">
-                <%= success %>
-            </div>
-        <% } %>
-    </div>
+
     
     <div id="landing-header">
  		
- 		<header id="jumbo" class='jumbotron'> 		
+ 		<header id="jumbo" class="boxs" > 		
 			
-			<h1 id="welcome"> Welcome to South Park </h1>
+			<h1 id="welcome" class="boxs"> Welcome to South Park </h1>
 			</header>
-		<a class = 'btn btn-primary btn-lg' href='/southpark'> Meet some friends of mine </a>
+		<a id='btn' href='/southpark' class="boxs"> Meet some friends of mine </a>
     </div>
     
     <ul class="slideshow">
