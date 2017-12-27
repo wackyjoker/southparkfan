@@ -110,24 +110,24 @@ body {
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(https://images5.alphacoders.com/668/thumb-1920-668183.jpg);
-  animation-delay:0s;
+  background-image: url(https://images.alphacoders.com/590/thumb-1920-590805.png);
+  animation-delay: 0s; 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(https://images.alphacoders.com/590/thumb-1920-590805.png);
+  background-image: url(https://images5.alphacoders.com/472/thumb-1920-472904.jpg);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(https://images5.alphacoders.com/472/thumb-1920-472904.jpg);
+  background-image: url(http://hdwallpaper20.com/wp-content/uploads/2017/01/south-park-wallpaper-free-Download10.jpg);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(http://hdwallpaper20.com/wp-content/uploads/2017/01/south-park-wallpaper-free-Download10.jpg);
+  background-image: url(https://images7.alphacoders.com/491/491778.jpg);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(https://images7.alphacoders.com/491/491778.jpg);
-  animation-delay: 40s; 
+  background-image: url(https://images5.alphacoders.com/668/thumb-1920-668183.jpg);
+  animation-delay:40s;
 }
 
 @keyframes imageAnimation { 
